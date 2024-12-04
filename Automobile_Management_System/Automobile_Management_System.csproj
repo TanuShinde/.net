@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C3CAC646-6D74-4857-8AC8-2152345F780B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Automobile_Management_System</RootNamespace>
+    <AssemblyName>Automobile_Management_System</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>caricon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllCustomerPaymentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllCustomerPaymentDetails.Designer.cs">
+      <DependentUpon>AllCustomerPaymentDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ALLPURCHASEDETAILS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ALLPURCHASEDETAILS.Designer.cs">
+      <DependentUpon>ALLPURCHASEDETAILS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ALLSERVICINGDETAILS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ALLSERVICINGDETAILS.Designer.cs">
+      <DependentUpon>ALLSERVICINGDETAILS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllStock.Designer.cs">
+      <DependentUpon>AllStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllSupplierPaymentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllSupplierPaymentDetails.Designer.cs">
+      <DependentUpon>AllSupplierPaymentDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AUTOMOBILEDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AUTOMOBILEDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AUTOMOBILEDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AUTOMOBILEDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customerpayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customerpayment.Designer.cs">
+      <DependentUpon>Customerpayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customerpaymentdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customerpaymentdetails.Designer.cs">
+      <DependentUpon>Customerpaymentdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerwiseServicingDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerwiseServicingDetails.Designer.cs">
+      <DependentUpon>CustomerwiseServicingDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewUser.Designer.cs">
+      <DependentUpon>NewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product.Designer.cs">
+      <DependentUpon>Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductwisePurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductwisePurchase.Designer.cs">
+      <DependentUpon>ProductwisePurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductwiseStockDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductwiseStockDetails.Designer.cs">
+      <DependentUpon>ProductwiseStockDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase.Designer.cs">
+      <DependentUpon>Purchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Servicing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicing.Designer.cs">
+      <DependentUpon>Servicing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock.Designer.cs">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier.Designer.cs">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplierpayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplierpayment.Designer.cs">
+      <DependentUpon>Supplierpayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierwisePaymentdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierwisePaymentdetails.Designer.cs">
+      <DependentUpon>SupplierwisePaymentdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierwisePurchaseDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierwisePurchaseDetails.Designer.cs">
+      <DependentUpon>SupplierwisePurchaseDetails.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AllCustomerPaymentDetails.resx">
+      <DependentUpon>AllCustomerPaymentDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ALLPURCHASEDETAILS.resx">
+      <DependentUpon>ALLPURCHASEDETAILS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ALLSERVICINGDETAILS.resx">
+      <DependentUpon>ALLSERVICINGDETAILS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllStock.resx">
+      <DependentUpon>AllStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllSupplierPaymentDetails.resx">
+      <DependentUpon>AllSupplierPaymentDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customerpayment.resx">
+      <DependentUpon>Customerpayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customerpaymentdetails.resx">
+      <DependentUpon>Customerpaymentdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerwiseServicingDetails.resx">
+      <DependentUpon>CustomerwiseServicingDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewUser.resx">
+      <DependentUpon>NewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\x86\Debug\Automobile_Management_System.AllCustomerPaymentDetails.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Automobile_Management_System.AllSupplierPaymentDetails.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Automobile_Management_System.Customer.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Automobile_Management_System.Customerpayment.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Automobile_Management_System.Customerpaymentdetails.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Automobile_Management_System.Form1.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Automobile_Management_System.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Automobile_Management_System.Purchase.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Automobile_Management_System.Supplier.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Automobile_Management_System.Supplierpayment.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Automobile_Management_System.SupplierwisePaymentdetails.resources" />
+    <EmbeddedResource Include="Product.resx">
+      <DependentUpon>Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductwisePurchase.resx">
+      <DependentUpon>ProductwisePurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductwiseStockDetails.resx">
+      <DependentUpon>ProductwiseStockDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Purchase.resx">
+      <DependentUpon>Purchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicing.resx">
+      <DependentUpon>Servicing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock.resx">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier.resx">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplierpayment.resx">
+      <DependentUpon>Supplierpayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierwisePaymentdetails.resx">
+      <DependentUpon>SupplierwisePaymentdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierwisePurchaseDetails.resx">
+      <DependentUpon>SupplierwisePurchaseDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="AUTOMOBILEDataSet.xsc">
+      <DependentUpon>AUTOMOBILEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AUTOMOBILEDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AUTOMOBILEDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AUTOMOBILEDataSet.xss">
+      <DependentUpon>AUTOMOBILEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AUTOMOBILEDataSet1.xsc">
+      <DependentUpon>AUTOMOBILEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AUTOMOBILEDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AUTOMOBILEDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AUTOMOBILEDataSet1.xss">
+      <DependentUpon>AUTOMOBILEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bin\Debug\Automobile_Management_System.exe.config" />
+    <None Include="bin\Debug\Automobile_Management_System.vshost.exe.config" />
+    <None Include="bin\Debug\Automobile_Management_System.vshost.exe.manifest" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="obj\x86\Debug\Automobile_Management_System.csproj.GenerateResource.Cache" />
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\x86\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Automobile_Management_System.exe" />
+    <Content Include="bin\Debug\Automobile_Management_System.pdb" />
+    <Content Include="bin\Debug\Automobile_Management_System.vshost.exe" />
+    <Content Include="caricon.ico" />
+    <Content Include="img\car.png" />
+    <Content Include="obj\x86\Debug\Automobile_Management_System.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Debug\Automobile_Management_System.exe" />
+    <Content Include="obj\x86\Debug\Automobile_Management_System.pdb" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
